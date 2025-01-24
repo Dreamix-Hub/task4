@@ -11,6 +11,11 @@
     font-family: "myFonts";
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
 :root {
     --theme-color: #7F0F0E;
     --border-color: #646263;
@@ -19,18 +24,12 @@
     --btn-color: #980E0B;
 }
 
-body {
-    font-size: 62.5%;
-}
 
 .container {
-    /* max-width: 85.375rem; */
     max-width: 140rem;
     margin: 0 auto;
-    padding: 0 2.4rem;
+    padding: 0 3rem;
 }
-
-
 
 .grid {
     display: grid;
@@ -51,22 +50,33 @@ textarea {
     outline: none;
 }
 
+.main-heading {
+    font-size: 2.8rem;
+    color: var(--btn-active);
+
+    &>span {
+        color: var(--btn-color);
+    }
+}
 
 .button-show {
     border-top: 2px solid var(--border-color);
     width: 60%;
-    /* margin-top: 1rem; */
 
     & button {
-        padding: .3rem .5rem;
-        font-size: 1.1rem;
-        margin-left: 4rem;
+        padding: .8rem 1rem;
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        width: 13.5rem;
         color: var(--nav-link);
         background-color: var(--btn-color);
-        border: none;
-        cursor: pointer;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
+}
+
+button {
+    border: none;
+    cursor: pointer;
 }
 
 /****************** header **************************/
@@ -80,22 +90,24 @@ textarea {
 
     & .call-us {
         color: var(--theme-color);
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 800;
         border-bottom: 3px solid var(--border-color);
+        margin: 0 .5rem;
     }
 
     & .number {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: 900;
-        letter-spacing: 5px;
-        line-height: 2.5rem;
+        letter-spacing: 4px;
+        line-height: 4rem;
+        text-align: center;
     }
 
     & .get-answer {
         font-weight: 700;
-        font-size: 1rem;
-        letter-spacing: .8px;
+        font-size: 1.5rem;
+        letter-spacing: .1px;
         color: var(--border-color);
     }
 }
@@ -118,24 +130,25 @@ textarea {
             text-decoration: none;
             color: var(--nav-link);
             display: inline-block;
-            padding: 0.7rem 1.3rem;
-            font-size: 1rem;
+            padding: 1.2rem 2.2rem;
+            font-size: 1.8rem;
         }
     }
 }
 
 /****************** hero section **************************/
-.section-hero {
-    margin: 2rem 0;
+main {
+    margin: 3rem 0;
     height: 100%;
-    gap: 1rem;
 }
 
-
+.section-hero {
+    gap: 2rem;
+}
 
 .section-hero--left {
     background-image: url("images/gurantee_banner.gif");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -143,7 +156,7 @@ textarea {
 
 .section-hero--right {
     background-image: url("images/form_bg.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -152,39 +165,36 @@ textarea {
 .questions {
     display: flex;
     justify-content: start;
-    /* align-items: center; */
 }
 
 .question-left p {
     background-color: var(--btn-color);
     color: var(--nav-link);
-    font-size: 2rem;
-    padding: .1rem .3rem;
+    font-size: 3.5rem;
+    padding: .5rem .8rem;
     letter-spacing: 2px;
 }
 
 .question-right {
-    /* background-color: #676767; */
-    padding: 0 4rem 0 2rem;
+    padding: 0 2rem 0 4rem;
 }
 
 .question-right p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    ;
 
     &>span {
         color: #082648;
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: 800;
     }
 }
 
 .middle-part {
-    padding: .5rem 2rem;
+    padding: .5rem 3rem;
 
     & .paragraph {
-        font-size: 1.2rem;
+        font-size: 2rem;
 
         &>span {
             font-weight: 700;
@@ -193,60 +203,52 @@ textarea {
 }
 
 .form {
-    /* background-color: #082648; */
-    padding: .5rem 0;
-    width: 100%;
-    height: 100%;
+    padding: 1rem 0;
     overflow: hidden;
-    /* gap: 2rem; */
+
 
     & .form-group {
-        /* background-color: darkgoldenrod; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: end;
         margin-left: -2.5rem;
-        gap: .8rem;
+        gap: 1rem;
         width: 100%;
 
 
         & label {
-            font-size: .9rem;
+            font-size: 1.5rem;
             font-weight: 500;
         }
 
         & input {
-            padding: .1rem;
+            padding: .2rem;
         }
     }
 
 
     & .confidential-img {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        /* background-color: yellow; */
-
-
-        & img {
-            width: 80%;
-            height: 75%;
-            margin-left: 3.2rem;
-            transform: rotate(8deg);
-            -webkit-transform: rotate(8deg);
-            -moz-transform: rotate(8deg);
-            -ms-transform: rotate(8deg);
-            -o-transform: rotate(8deg);
-        }
+        width: 90%;
+        height: 80%;
+        margin-top: 1rem;
+        transform: rotate(4.5deg);
+        -webkit-transform: rotate(4.5deg);
+        -moz-transform: rotate(4.5deg);
+        -ms-transform: rotate(4.5deg);
+        -o-transform: rotate(4.5deg);
     }
 
 }
 
 textarea {
     width: 100%;
-    height: 5rem;
-    padding: .3rem .5rem;
+    height: 8rem;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+    overflow-x: hidden;
 }
 
 .bottom-part {
@@ -255,30 +257,23 @@ textarea {
     align-items: center;
 
     & div {
-        padding: 1rem 0;
+        padding: .8rem 0;
     }
 
     & .guarantee-text {
         color: var(--border-color);
         font-style: italic;
-        font-size: 1rem;
+        font-size: 1.6rem;
         font-weight: 600;
     }
 
     & .guarantee-btn {
         text-align: center;
-        padding: .8rem 1.3rem;
+        padding: .8rem 1.7em;
         background-color: var(--btn-color);
-        font-size: 1.2rem;
+        font-size: 2rem;
+        font-weight: 600;
         color: var(--nav-link);
-        border: none;
-        cursor: pointer;
-
-
-        &>img {
-            width: .9rem;
-            height: 1rem;
-        }
     }
 }
 
@@ -286,13 +281,14 @@ textarea {
 
 
 .section-show {
-    margin: 1rem 0;
+    margin: 2.5rem 0;
 
     & p {
         color: var(--btn-active);
-        font-size: 1rem;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
         font-weight: 500;
+        line-height: 1.9rem;
     }
 }
 
@@ -301,7 +297,7 @@ textarea {
 .box-2--top,
 .box-2--bottom,
 .box-3 {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2rem;
 }
 
 .box-1 {
@@ -309,9 +305,9 @@ textarea {
 
     & .sub-heading {
         font-weight: 600;
-        font-size: 1.3rem;
+        font-size: 2.2rem;
         color: var(--btn-color);
-        margin: 0;
+        margin-top: 1rem;
     }
 
     & .paragraph {
@@ -326,7 +322,7 @@ textarea {
         & .image {
 
             & img {
-                width: 7rem;
+                width: 10rem;
             }
         }
     }
@@ -335,21 +331,11 @@ textarea {
         display: flex;
         justify-content: end;
         align-items: center;
+        margin-top: 2rem;
 
         & button {
-            margin-left: 2.5rem;
+            margin-left: 5rem;
         }
-    }
-}
-
-
-
-.main-heading {
-    font-size: 1.8rem;
-    color: var(--btn-active);
-
-    &>span {
-        color: var(--btn-color);
     }
 }
 
@@ -363,8 +349,12 @@ textarea {
         align-items: center;
 
         & img {
-            width: 12rem;
+            width: 20rem;
         }
+    }
+
+    & button {
+        margin-left: 8rem;
     }
 
     & .box-2--top {
@@ -424,13 +414,13 @@ textarea {
 
 
 .parent {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 .menu-link {
     background-color: #838383;
     display: flex;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
     & .image {
@@ -441,26 +431,25 @@ textarea {
     & .link-content {
         color: var(--nav-link);
         width: 100%;
-        padding: .5rem 1rem .3rem 1rem;
+        padding: .9rem 1rem .3rem 1rem;
 
         & h3 {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
         & .link {
-            margin-top: 3%;
+            margin-top: 5%;
             text-align: end;
 
             & a {
                 text-decoration: none;
                 color: var(--nav-link);
-                font-size: .95rem;
+                font-size: 1.5rem;
                 font-weight: 500;
             }
         }
     }
 }
-
 
 .draft {
     text-align: center;
@@ -479,22 +468,20 @@ textarea {
 
     & h1 {
         color: var(--border-color);
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
     }
 
     & p {
         color: var(--btn-active);
-        font-size: 1rem;
-        line-height: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
     }
 }
 
 .testimonial {
-    /* background-color: yellow; */
 
     & .review {
-        /* background-color: #082648; */
         margin: 1rem 0;
     }
 
@@ -504,27 +491,28 @@ textarea {
 
     & p {
         color: var(--btn-active);
-        font-size: 1rem;
-        line-height: 1.2rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
     }
 
     & .button-show {
         width: 100%;
 
-
         & button {
-            margin-left: 6rem;
+            margin-left: 9rem;
         }
     }
 
     & .image {
         display: block;
-        margin: 2rem auto;
+        margin: 4rem auto;
     }
 }
 
 
 .social-links {
+    margin-bottom: 2rem;
+
     & .main-heading {
         text-align: center;
         border-bottom: 3px solid var(--border-color);
