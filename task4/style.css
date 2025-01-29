@@ -86,6 +86,17 @@ button {
     flex-direction: row;
     padding-left: 0;
 
+    & .logo {
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    & .right-content {
+        height: auto;
+        width: auto;
+    }
+
     & .call-us {
         color: var(--theme-color);
         font-size: 2rem;
@@ -113,6 +124,9 @@ button {
 /****************** navbar **************************/
 .navbar {
     background-color: var(--theme-color);
+    /* position: sticky;
+    top: 0;
+    z-index: 99; */
 
     & ul {
         display: flex;
@@ -163,6 +177,7 @@ main {
 .questions {
     display: flex;
     justify-content: start;
+    /* background-color: #000; */
 }
 
 .question-left p {
@@ -174,12 +189,14 @@ main {
 }
 
 .question-right {
-    padding: 0 2rem 0 4rem;
+    padding: 1rem 2rem 0 4rem;
 }
 
 .question-right p {
     font-size: 2.5rem;
     font-weight: 600;
+    line-height: 3rem;
+    /* background-color: yellow; */
 
     &>span {
         color: #082648;
@@ -202,20 +219,26 @@ main {
 
 .form {
     padding: 1rem 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* background-color: #676767; */
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin: .5rem 0;
 
     & .form-group {
         display: flex;
         flex-direction: column;
         justify-content: end;
         align-items: end;
-        margin-left: -2.5rem;
+        /* background-color: yellowgreen; */
+        /* margin-left: -2.5rem; */
         gap: 1rem;
         width: 100%;
 
         & label {
             font-size: 1.5rem;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         & input {
@@ -225,9 +248,8 @@ main {
 
     & .confidential-img {
         width: 90%;
-        height: 80%;
-        margin-top: 1rem;
-        margin-left: 2rem;
+        max-height: auto;
+        /* background-color: yellow; */
         transform: rotate(4.5deg);
         -webkit-transform: rotate(4.5deg);
         -moz-transform: rotate(4.5deg);
@@ -240,7 +262,6 @@ textarea {
     width: 100%;
     height: 8rem;
     padding: .5rem 1rem;
-    margin-top: 1rem;
     overflow-y: auto;
     overflow-wrap: anywhere;
     overflow-x: hidden;
@@ -349,7 +370,13 @@ textarea {
     }
 
     & button {
-        margin-left: 8rem;
+        /*margin-left: 50px;
+        */
+        transform: translateX(40px);
+        -webkit-transform: translateX(40px);
+        -moz-transform: translateX(40px);
+        -ms-transform: translateX(40px);
+        -o-transform: translateX(40px);
     }
 
     & .box-2--top {

@@ -1,255 +1,29 @@
 /****************** media queries area **************************/
-
 @media (width<=1400px) {
     html {
-        font-size: 62.25%;
+        font-size: 62.5%;
     }
 
-    .certificate-image {
-        width: 18rem;
-    }
-}
-
-
-@media (width<=1300px) {
-    html {
-        font-size: 54%;
+    .question-left p {
+        font-size: 3rem;
     }
 
-    .certificate-image {
-        width: 15rem;
-    }
+    .question-right p {
+        font-size: 2.3rem;
 
-    .social-links {
-
-        & .links {
-
-            & img {
-                width: 40px;
-            }
-        }
-    }
-}
-
-@media (width<=1200px) {
-    .section-header {
-        & .logo {
-            & img {
-                width: 90%;
-            }
+        &>span {
+            font-size: 3.8rem;
         }
     }
 
-    .navbar {
-        & ul {
-            gap: .7rem;
-
-            & li a {
-                font-size: 1.8rem;
-            }
-        }
+    .middle-part .paragraph {
+        font-size: 1.6rem;
     }
 
-
-    .questions {
-
-        & .question-left p {
-            font-size: 3.2rem;
+    .form .form-group {
+        & label {
+            font-size: 1.2rem;
         }
-
-        & .question-right {
-            padding: 0 4rem 0 4rem;
-
-            & p {
-                font-size: 2.5rem;
-
-                &>span {
-                    font-size: 3.5rem;
-                }
-            }
-        }
-    }
-
-    .middle-part {
-
-        & .paragraph {
-            font-size: 1.8rem;
-        }
-    }
-
-    .form {
-        overflow: visible;
-
-        & .form-group {
-            margin-left: .1rem;
-
-            & label {
-                font-size: 1.4rem;
-            }
-
-            & input {
-                padding: .15rem;
-            }
-        }
-
-        & .confidential-img {
-            width: 88%;
-            height: 78%;
-            margin-left: 2.5rem;
-        }
-    }
-
-    .bottom-part {
-        & .guarantee-text {
-            font-size: 1.4rem;
-        }
-    }
-
-    .social-links {
-        & .links {
-
-            & img {
-                width: 38px;
-            }
-        }
-    }
-
-}
-
-@media (width<=1090px) {
-
-    .questions {
-        & .question-left p {
-            font-size: 3rem;
-        }
-
-        & .question-right {
-            padding: 0 3rem 0 4rem;
-
-            & p {
-                font-size: 2.5rem;
-
-                &>span {
-                    font-size: 3.2rem;
-                }
-            }
-        }
-    }
-
-    .form {
-
-        & .form-group {
-            width: 102%;
-        }
-
-    }
-
-    .bottom-part {
-
-        & .guarantee-text {
-            font-size: 1.5rem;
-        }
-
-        & .guarantee-btn {
-            font-size: 1.9rem;
-        }
-    }
-
-    .box-1 {
-        & .sub-heading {
-            font-size: 2rem
-        }
-
-        & .container-button {
-
-            & button {
-                margin-left: 3.5rem;
-            }
-        }
-    }
-
-    .box-2 {
-        & button {
-            margin-left: 6rem;
-        }
-    }
-
-
-    .row {
-        & p {
-            font-size: 1.8rem;
-        }
-    }
-
-    .main-heading {
-        font-size: 2.5rem;
-    }
-}
-
-@media (width<=998px) {
-    .section-header {
-        & .logo {
-            & img {
-                width: 80%;
-            }
-        }
-    }
-
-    .navbar {
-        & ul {
-            gap: .2rem;
-
-
-            & li a {
-                font-size: 1.5rem;
-            }
-        }
-    }
-
-    .questions {
-        & .question-left p {
-            font-size: 2.8rem;
-        }
-
-        & .question-right {
-            padding: 0 3rem 0 4rem;
-
-            & p {
-                font-size: 2rem;
-
-                &>span {
-                    font-size: 3rem;
-                }
-            }
-        }
-    }
-
-    .middle-part {
-        & .paragraph {
-            font-size: 1.6rem;
-        }
-    }
-
-    .form {
-        & .form-group {
-            margin: 0;
-            width: 110%;
-
-            & label {
-                font-size: 1.2rem;
-            }
-        }
-
-
-        & .confidential-img {
-            width: 85%;
-            height: 80%;
-            margin-left: 3rem;
-        }
-    }
-
-    textarea {
-        height: 7rem;
     }
 
     .bottom-part {
@@ -258,72 +32,93 @@
         }
 
         & .guarantee-btn {
-            font-size: 1.5rem;
-
-            &>img {
-                width: .7rem;
-            }
+            font-size: 1.6rem;
         }
     }
 
-    .box-1 {
-        & .sub-heading {
-            font-size: 1.8rem;
-            margin: 0;
-        }
-
-        & .container-button {
-
-            & button {
-                margin-left: 2.5rem;
-            }
-        }
+    .main-heading {
+        font-size: 2.3rem;
     }
 
-    :is(.content, .paragraph, .box-3) p {
+    .section-show p {
         font-size: 1.5rem;
+        padding-right: 1rem;
     }
 
-    .button-show button {
-        margin-left: 3.5rem;
-        font-size: 1.3rem;
-
-        &>img {
-            width: .8rem;
-        }
+    .box-1 .sub-heading {
+        font-size: 1.8rem;
+        margin-top: .5rem;
     }
 
-    .box-2 figure {
-        & img {
-            width: 18rem;
-        }
-    }
-
-    .review:has(.button-show) button {
-        margin-left: 5.5rem;
-        font-size: 1.3rem;
-
-        &>img {
-            width: .8rem;
-        }
+    .box-2 figure img {
+        width: 18rem;
     }
 }
 
-@media (width<=768px) {
+@media (width<=1220px) {
+    html {
+        font-size: 56.25%;
+    }
 
-    .navbar ul {
-        justify-content: center;
-
-        & li a {
-            font-size: 1.2rem;
+    .navbar ul li {
+        & a {
+            font-size: 1.5rem;
         }
     }
 
-    main .grid-two--cols {
+    .question-left p {
+        font-size: 2.8rem;
+    }
+
+    .question-right p {
+        font-size: 1.8rem;
+
+        &>span {
+            font-size: 3.2rem;
+        }
+    }
+
+    .middle-part .paragraph {
+        font-size: 1.5rem;
+    }
+
+
+    .form .form-group {
+        /* margin-left: 1rem; */
+        background-color: yellow;
+
+        & label {
+            font-size: 1rem;
+        }
+
+        & input {
+            padding: .1rem;
+        }
+    }
+
+    .form .confidential-img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (width<=998px) {
+    html {
+        font-size: 54%;
+    }
+
+    main .section-hero {
         grid-template-columns: 1fr;
 
         & .section-hero--left {
-            width: 100%;
+            width: auto;
+            height: 100vh;
+            order: 2;
+        }
+
+        & .section-hero--right {
+            order: 1;
+
         }
     }
 }
