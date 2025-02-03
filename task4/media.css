@@ -83,13 +83,12 @@
     }
 
     .form {
-        overflow: hidden;
+        gap: 1rem;
     }
 
     .form .form-group {
-        /* margin-left: 2rem; */
-        width: 120%;
-        /* background-color: yellow; */
+        padding: 0;
+        width: 25rem;
 
         & label {
             font-size: 1rem;
@@ -101,8 +100,9 @@
     }
 
     .form .confidential-img {
-        width: 90%;
-        height: 80%;
+        padding: .5rem;
+        width: 100%;
+        height: 90%;
     }
 
     .box-1 .container-button button {
@@ -187,25 +187,32 @@
         }
     }
 
+    .section-show .grid-three--cols {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+
     .section-show p {
         font-size: 1.4rem;
     }
 
     .main-heading {
-        font-size: 1.9rem;
+        font-size: 2.5rem;
     }
 
     .box-1 .sub-heading {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .section-show .content .image {
         & img {
-            width: 8rem;
+            width: 12rem;
+            height: auto;
         }
     }
 
     .box-1 .container-button button {
+        margin-left: 40%;
         padding: 0.5rem 0.8rem;
         font-size: 1.2rem;
 
@@ -215,7 +222,7 @@
     }
 
     .button-show {
-        width: 70%;
+        width: 60%;
 
         & button {
             width: 11rem;
@@ -227,6 +234,10 @@
         }
     }
 
+    :is(.box-2) button {
+        margin-left: 30%;
+    }
+
     :is(.box-2, .box-3) button {
         padding: 0.5rem 0.8rem;
     }
@@ -236,15 +247,23 @@
     }
 
     .box-2 figure img {
-        width: 13rem;
+        width: 80%;
+        height: auto;
     }
 
     .box-3 .certificates {
-        justify-content: space-between;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
 
         & img {
-            width: 10rem;
+            width: 30%;
+            height: auto;
         }
+    }
+
+    .review-content .main-heading {
+        font-size: 2rem;
     }
 
     .menu-link {
@@ -282,6 +301,7 @@
 }
 
 @media (width<=768px) {
+
     .section-hero--left {
         height: 60vh;
         width: auto;
@@ -342,12 +362,10 @@
     }
 
     .form .form-group {
-        /* background-color: yellow; */
         width: 106%;
     }
 
     .form .confidential-img {
-        /* margin-left: 1rem; */
         width: 20rem;
         height: 8rem;
     }
@@ -376,6 +394,7 @@
 
     .section-show p {
         font-size: 2rem;
+        margin: 1rem 0;
     }
 
     .section-show .content .image {
@@ -386,11 +405,10 @@
     }
 
     .row {
-        gap: 4rem;
+        row-gap: 4rem;
     }
 
     .box-1 .container-button button {
-        /*padding: .5rem .8rem;*/
         margin-left: 35%;
         font-size: 2rem;
 
@@ -413,16 +431,16 @@
     }
 
     .box-2 figure img {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 
     .box-2 button {
-        transform: translateX(35px);
-        -webkit-transform: translateX(35px);
-        -moz-transform: translateX(35px);
-        -ms-transform: translateX(35px);
-        -o-transform: translateX(35px);
+        transform: translateX(25px);
+        -webkit-transform: translateX(25px);
+        -moz-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        -o-transform: translateX(25px);
     }
 
     .box-3 .certificates {
@@ -473,6 +491,9 @@
 
     .testimonial {
         order: 3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
 
         & p {
             font-size: 2rem;
@@ -480,24 +501,32 @@
         }
 
         & .button-show button {
-            margin-left: 50%;
+            margin-left: 40%;
         }
 
         & .certificate-image {
-            width: 30%;
+            width: 60%;
             height: auto;
         }
+    }
+
+    .testimonial-bottom {
+        padding: 0 1rem;
     }
 
     .social-links .links {
         justify-content: center;
-        gap: 5rem;
+        gap: 2rem;
 
         & img {
-            width: 180%;
+            width: 100%;
             height: auto;
         }
     }
+    .review-content .main-heading {
+        font-size: 3rem;
+    }
+
 }
 
 @media (width<=576px) {
@@ -663,6 +692,19 @@
 
     .social-links .links img {
         width: 40px;
+    }
+
+    .testimonial {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial .review .button-show button {
+        margin-left: 60%;
+    }
+
+    .testimonial-bottom .certificate-image {
+        width: 40%;
+        height: auto;
     }
 }
 
