@@ -24,6 +24,15 @@
         & label {
             font-size: 1.2rem;
         }
+
+        & div {
+            width: 100%;
+            text-align: end;
+
+            & input {
+                width: 78%;
+            }
+        }
     }
 
     .bottom-part {
@@ -117,6 +126,14 @@
         -o-transform: translateX(10px);
     }
 
+    .box-3 .container-button .button-show {
+        width: 200px;
+
+        & button {
+            margin-left: 70px;
+        }
+    }
+
     .testimonial .button-show button {
         margin-left: 30%;
     }
@@ -136,7 +153,8 @@
     }
 
     .section-hero--left {
-        height: 70vh;
+        width: auto;
+        height: 500px;
     }
 
     .question-left p {
@@ -308,10 +326,9 @@
 
 @media (width<=768px) {
 
-
     .section-hero--left {
-        height: 60vh;
         width: auto;
+        height: 400px;
     }
 
     .section-header {
@@ -416,6 +433,7 @@
     }
 
     .box-1 .container-button button {
+
         margin-left: 35%;
         font-size: 2rem;
 
@@ -442,12 +460,12 @@
         height: auto;
     }
 
+    .box-2 .button-show {
+        width: 100%;
+    }
+
     .box-2 button {
-        transform: translateX(25px);
-        -webkit-transform: translateX(25px);
-        -moz-transform: translateX(25px);
-        -ms-transform: translateX(25px);
-        -o-transform: translateX(25px);
+        margin-left: 120px;
     }
 
     .box-3 .certificates {
@@ -463,6 +481,14 @@
     .box-3 {
         grid-column-start: 1;
         grid-column-end: 2;
+
+        & .container-button .button-show {
+            width: 300px;
+
+            & button {
+                margin-left: 100px;
+            }
+        }
     }
 
     .section-content .container {
@@ -555,8 +581,7 @@
 }
 
 @media (width<=576px) {
-
-
+    
 
     .section-header {
         flex-direction: column;
@@ -592,6 +617,11 @@
         }
     }
 
+    .section-hero--left {
+        width: auto;
+        height: 350px;
+    }
+
     .questions {
         flex-direction: column;
     }
@@ -619,7 +649,6 @@
         & .form-group {
             & div {
                 width: 100%;
-                /* background-color: goldenrod; */
                 text-align: end;
 
                 & input {
@@ -692,11 +721,7 @@
     }
 
     .box-2 button {
-        transform: translateX(10px);
-        -webkit-transform: translateX(10px);
-        -moz-transform: translateX(10px);
-        -ms-transform: translateX(10px);
-        -o-transform: translateX(10px);
+        margin-left: 50px;
     }
 
     .middle-content h1 {
@@ -737,8 +762,13 @@
         grid-template-columns: 1fr;
     }
 
+    .testimonial .review .button-show {
+        width: 200px;
+        float: right;
+    }
+
     .testimonial .review .button-show button {
-        margin-left: 60%;
+        margin-left: 60px;
     }
 
     .testimonial-bottom .certificate-image {
@@ -748,6 +778,12 @@
 }
 
 @media (width<=400px) {
+    
+
+    .section-hero--left {
+        width: auto;
+        height: 290px;
+    }
 
     .question-left p {
         font-size: 2.5rem;
@@ -828,7 +864,6 @@
         font-size: 1.2rem;
     }
 
-
     .box-2 figure img {
         width: 100%;
     }
@@ -838,8 +873,18 @@
         height: auto;
     }
 
-    .middle-content h1 {
-        font-size: 3rem;
+    .middle-content {
+        & h1 {
+            font-size: 2.5rem;
+        }
+
+        & p {
+            font-size: 1.3rem;
+        }
+    }
+
+    .review-content .main-heading {
+        font-size: 2rem;
     }
 
     .menu-link .link-content {
@@ -855,7 +900,9 @@
             }
         }
     }
-
+    .testimonial .review .button-show button {
+        margin-left: 70px;
+    }
     .testimonial p {
         font-size: 1.5rem;
         line-height: 2rem;
